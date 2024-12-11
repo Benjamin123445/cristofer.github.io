@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: #576CBC;
+    height: 80px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo{
+    height: 85px;
+    border-radius: 50%;
+    padding: 7px 13px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+li a.active, li:hover {
+    background: #000090;
+    transition: .5s;
+}
+
+.chekbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+
+#check{
+    display: none;
+}
+
+section{
+    background: url(./IMG/fondo.png);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+
+@media (max-width: 952x){
+    .enlace{
+        padding-left: 20px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 858px){
+    .chekbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100px;
+        text-align: center;
+        transition: all .5s;   
+    }
+    nav ul li{
+        display: block;
+        margin-top: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+
+    #check:checked, ul {
+        left:0;
+    }
+}
+.titulo {
+    position: absolute;
+    margin-top: -73px;
+    margin-left: 91px;
+    text-align: center;
+    color: white;
+    
+}
+.contenedor-imagen {
+    display: flex;
+  }
+  
+  .imagen {
+    text-align: center;
+    margin: 0 10px; 
+  }
+  
+  .imagen img {
+    width: 250px; 
+    height: auto; 
+    margin-left: 8%;
+  }
+  
+  .imagen h3 {
+    margin-top: 10px; 
+    margin-left: 8%;
+    margin-right: 8%;
+    
+  }
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .hola img{
+    margin-top: 10px; 
+    margin-left: 8%;
+    margin-right: 8%;
+    width: 250px; 
+    height: 75%; 
+   
+  }
+
+  .hola h3{
+    margin-top: 20px; 
+    margin-left: 8%;
+    width: 250px; 
+    height: auto; 
+    
+
+  }
+
+  .hola2 img{
+    margin-top: 10px; 
+    margin-left: 8%;
+    width: 250px; 
+    height: 75%; 
+  }
+
+  
